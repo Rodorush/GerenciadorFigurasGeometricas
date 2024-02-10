@@ -11,8 +11,8 @@ class Triangulo extends Figura {
   void GetTipo() {
     (_face1 == _face2 && _face2 == _face3)
         ? print("Triângulo Equilátero")
-        : (_face1 == _face2 && _face1 == _face3 || _face2 == _face3) ? print(
-        "Triângulo Isosceles") : print("Triângulo Escaleno");
+        : (_face1 == _face2 || _face1 == _face3 || _face2 == _face3) ? print(
+        "Triângulo Isósceles") : print("Triângulo Escaleno");
     }
 
   @override
